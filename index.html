@@ -1,2 +1,48 @@
-# kjairam1.github.io
-Project Website
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Modal Windows (Bootstrap) by Kelly Jairam</title>
+  </head>
+  <body>
+      <div class="container">
+        <h3>Modal Window using BootStrap</h3>
+    <!--button to open the modal window-->
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#mymodal">OPEN Modal Window</button>
+    <!-- start of modal page (tranperancy)-->
+        <div class="modal" id="mymodal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+        <!-- HEADER-->
+              <div class="modal-header bg-secondary">
+                <h4>This is the TITLE of the modal window.</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+        <!-- BODY-->
+              <div class="modal-body">
+                <h5>New York City <small>The Big Apple</small></h5>
+                <img src="nyc.jpg" alt="New York City" title="The Empire State Building (Manhattan)" style="width:70%;">
+                  <p>This paragraph describes New York City.</p>
+              </div>
+       <!-- FOOTER-->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>     <!-- END of modal page-->
+      </div> <!-- END of modal CONTAINER-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
+
