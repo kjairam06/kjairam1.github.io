@@ -1,0 +1,725 @@
+body{
+  font-family: sans-serif;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: beige;
+}
+/*--ANIMATIONS--*/
+.webheading{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.logo{
+  width: 30%;
+  height: 100%;
+  float: left;
+  margin: 5px;
+}
+.icon{
+  width: 100px;
+  height: 100px;
+  border: outset pink;
+  margin-left: 20%;
+  animation-delay: 3s;
+  animation: zoomicon 10s 3
+}
+@keyframes zoomicon {
+  0%{transform: scale(0);}
+  50%{transform: scale(1);}
+  100%{transform: scale(0.3);}
+}
+.title{
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 5px;
+}
+.a1{
+  text-align: left;
+  font-weight: bolder;
+  font-size: 40px;
+  color: lightsalmon;
+  text-shadow: 4px 3px 0px peachpuff;
+  line-height: .25;
+  width: 100%;
+  animation: slideA1 5s 4
+}
+.a2{
+  text-align: left;
+  font-weight: bold;
+  color: brown;
+  font-size: 20px;
+  font-stretch: extra-expanded;
+  animation: slideA2 5s 4;
+  width: 100%;
+}
+@keyframes slideA1 {
+  from {transform: translateX(45px);}
+  to {transform: translateX(-45px);}
+}
+@keyframes slideA2 {
+  from {transform: translateX(-60px);}
+  to {transform: translateX(60px);}
+}
+/*--SLIDESHOW--*/
+
+.slideshow{
+  overflow: hidden;
+  height: 60px;
+  width: 100%;
+  border: outset white;
+  border-width: thick;
+}
+.slide-wrapper{
+  width: 300%;
+  height: 100%;
+  animation-delay: 5s;
+  animation: slideshoweffect 18s 3;
+}
+@keyframes slideshoweffect {
+  0% {margin-left: 0px;}
+  25% {margin-left: -100%;}
+  50% {margin-left: -200%;}
+  100%{margin-left: 0%}
+}
+.slide1{
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+  background-color: #f1c6e7;
+  font-weight: bold;
+  color: black;
+}
+.slide2{
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+  background-color: #c6f1d6;
+  font-weight: bold;
+  color: black;
+}
+.slide3{
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  text-align: center;
+  background-color: #c6cbef;
+  font-weight: bold;
+  color: black;
+
+}
+/*--END OF SLIDESHOW--*/
+img{width: 100%; height:100%;}
+
+.positionimage{
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+}
+.firstimg{
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  border: outset white;
+  border-width: thick;
+}
+.message1{
+  position: absolute;
+  left: 15%;
+  bottom: 15%;
+  width: 70%;
+  background-color: rgba(223, 94, 165, 0.8);
+  color: black;
+  font-stretch: semi-expanded;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  border: inset white;
+}
+.title1{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  color: lightsalmon;
+  text-shadow: 4px 3px 0px peachpuff;
+}
+.heroimg{
+ background-image: linear-gradient(to right, rgba(228,134,88,0.5),rgba(180,250,185,0.3)), url("images/disney1.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 100% 100%;
+ width: 80%;
+ height: 400px;
+ position: relative;
+ border: outset white;
+ border-width: thick;
+ margin-left: 10%;
+}
+.herotxt{
+position: absolute;
+top: 30px;
+right: 30px;
+width: 60%;
+color: white;
+text-align: right;
+font-weight: bold;
+font-size: 20px;
+color: whitesmoke;
+line-height: .5;
+}
+.shop{
+ padding: 10px 20px;
+ color: white;
+ background-color: black;
+ font-weight: 600;
+ font-size: 15px;
+ text-align: center;
+ border-radius: 0px;
+ bottom: 10px;
+ display: inline-block;
+ text-decoration: none;
+}
+/*--BEGINNING OF MODAL WINDOWS (3 PRODUCTS)--*/
+.title2{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  color: lightsalmon;
+  text-shadow: 4px 3px 0px peachpuff;
+}
+.products{
+  width:100%;
+  height: 500px;
+  padding: 5px;
+}
+.product1{
+  width:25%;
+  height: 100%;
+  float: left;
+  margin-left: 6%;
+  padding-top: 15px;
+  border: outset white;
+  background-color: bisque;
+}
+.imageprod1{
+  height: 60%;
+  width: 90%;
+  margin-left: 15px;
+}
+.cap1{
+  text-align:center;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+.cap2{
+  text-align: center;
+  line-height: 0.5;
+  color: black;
+}
+.cap3{
+  text-align: center;
+  line-height: 0.5;
+  color: black;
+}
+.cap4{
+  text-align: center;
+  line-height: 0.5;
+  color: black;
+}
+.link_mw1, .link_mw2, .link_mw3{
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 15px;
+  margin-left: 90px;
+  display: inline-block;
+  text-decoration: none;
+}
+.product2{
+  width:25%;
+  height: 100%;
+  float: left;
+  margin-left: 6%;
+  padding-top: 15px;
+  border: outset white;
+  background-color: bisque;
+}
+.imageprod2{
+  height: 60%;
+  width: 90%;
+  margin-left: 15px;
+}
+.product3{
+  width:25%;
+  height: 100%;
+  float: left;
+  margin-left: 6%;
+  padding-top: 15px;
+  border: outset white;
+  background-color: bisque;
+}
+.imageprod3{
+  height: 60%;
+  width: 90%;
+  margin-left: 15px;
+}
+/*--CREATING MODAL WINDOWS FOR "EYESHAODW" PRODUCT PAGE (3)--*/
+/*--FIRST MODAL WINDOW--*/
+.modal1{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 128, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal1:target{opacity: 1; pointer-events: auto; transition: ease-in 1s;}
+.msgtext1{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: left;
+  line-height: .5;
+}
+.msgtext1 p{width: 50%; margin-right: 30px; line-height: 1;}
+.modalimg1{
+  width: 40%;
+  height: auto;
+  margin-left: 55%;
+  margin-top: -16%;
+  border: solid goldenrod;
+}
+.closemodal1{
+  color: white;
+  background-color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20%;
+  text-decoration: none;
+}
+/*--SECOND MODAL WINDOW--*/
+.modal2{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 128, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal2:target{opacity: 1; pointer-events: auto; transition: ease-in 1s;}
+.msgtext2{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: left;
+  line-height: .5;
+}
+.msgtext2 p{width: 50%; margin-right: 30px; line-height: 1;}
+.modalimg2{
+ width: 40%;
+ height: auto;
+ margin-left: 55%;
+ margin-top: -16%;
+ border: solid pink;
+}
+.closemodal2{
+  color: white;
+  background-color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20%;
+  text-decoration: none;
+}
+/*--THIRD MODAL WINDOW--*/
+.modal3{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(192, 192, 192, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal3:target{opacity: 1; pointer-events: auto; transition: ease-in 1s;}
+.msgtext3{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: left;
+  line-height: .5;
+  padding: 20px;
+}
+.msgtext3 p{width: 50%; margin-right: 30px; line-height: 1;}
+.modalimg3{
+ width: 40%;
+ height: auto;
+ margin-left: 50%;
+ margin-top: -16%;
+ border: solid orange;
+}
+.closemodal3{
+  color: white;
+  background-color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20%;
+  text-decoration: none;
+}
+/*--DISNEY PRODUCT SECTION-*/
+/*--CONTAINER FOR PRODUCTS--*/
+.title3{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  color: lightsalmon;
+  text-shadow: 4px 3px 0px peachpuff;
+}
+.disneyproducts{
+  width:100%;
+  height: 500px;
+  padding: 5px;
+}
+/*--CAPTIONS--*/
+.capA{text-align: center; line-height: 1; font-weight: bold; color: black; font-size: 15px;}
+.capB{text-align: center; line-height: 0.5;  color: black;}
+.capC{text-align: center; line-height: 0.5; font-style: italic;  color: black;}
+.capD{text-align: center; line-height: 0.5;  color: black;}
+.link_mw4, .link_mw5, .link_mw6{
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  font-size: 15px;
+  margin-left: 90px;
+  display: inline-block;
+  text-decoration: none;
+}
+/*--DISNEY PRODUCT ONE--*/
+.product4{
+  width:25%;
+  height: 100%;
+  float: left;
+  margin-left: 6%;
+  padding-top: 15px;
+  border: outset white;
+  background-color: bisque;
+}
+.disneyimg4{
+  height: 60%;
+  width: 90%;
+  margin-left: 15px;
+}
+/*--MODAL WINDOW 1--*/
+.modal4{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 128, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal4:target{opacity: 1; pointer-events: auto; transition: ease-in 1s;}
+.msgtext4{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: left;
+  line-height: 1;
+  padding: 20px;
+}
+.modalimg4{
+  width: 40%;
+  height: auto;
+  margin-left: 55%;
+  margin-top: -16%;
+  border: solid seagreen;
+}
+.msgtext4 p{width: 50%; margin-right: 30px; line-height: 1;}
+.closemodal4{
+  color: white;
+  background-color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20%;
+  text-decoration: none;
+}
+/*--DISNEY PRODUCT TWO--*/
+.product5{
+  width:25%;
+  height: 100%;
+  float: left;
+  margin-left: 6%;
+  padding-top: 15px;
+  border: outset white;
+  background-color: bisque;
+}
+.disneyimg5{
+  height: 60%;
+  width: 90%;
+  margin-left: 15px;
+}
+/*--MODAL WINDOW 2--*/
+.modal5{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 128, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal5:target{opacity: 1; pointer-events: auto; transition: ease-in 1s;}
+.msgtext5{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: left;
+  line-height: 1;
+  padding: 20px;
+}
+.modalimg5{
+  width: 40%;
+  height: auto;
+  margin-left: 55%;
+  margin-top: -16%;
+  border: solid mediumorchid;
+}
+.msgtext5 p{width: 50%; margin-right: 30px; line-height: 1;}
+.closemodal5{
+  color: white;
+  background-color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20%;
+  text-decoration: none;
+}
+/*--DISNEY PRODUCT THREE--*/
+.product6{
+  width:25%;
+  height: 100%;
+  float: left;
+  margin-left: 6%;
+  padding-top: 15px;
+  border: outset white;
+  background-color: bisque;
+}
+.disneyimg6{
+  height: 60%;
+  width: 90%;
+  margin-left: 15px;
+}
+/*--MODAL WINDOW 3--*/
+.modal6{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 128, 0.4);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal6:target{opacity: 1; pointer-events: auto; transition: ease-in 1s;}
+.msgtext6{
+  position: relative;
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: whitesmoke;
+  padding: 10px;
+  text-align: left;
+  line-height: .1;
+  padding: 20px;
+}
+.modalimg6{
+  width: 40%;
+  height: auto;
+  margin-left: 55%;
+  margin-top: -16%;
+  border: solid dodgerblue;
+}
+.msgtext6 p{width: 50%; margin-right: 30px; line-height: 1;}
+.closemodal6{
+  color: white;
+  background-color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20%;
+  text-decoration: none;
+}
+/*--credits--*/
+.container{
+  width: 100%;
+  height: 300px;
+  background-color: rosybrown;
+  border: outset white;
+  border-width: thick;
+}
+.number1{
+  width: 100%;
+  height: 200px;
+  margin: 5px
+}
+.one, .two, .three, .four{
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.one, .two, .three, .four, p{line-height: .75; color: white; text-align: center;}
+.one, .two, .three, .four, h5{color: lightpink; font-weight: bold;}
+
+.socialmedia{
+  width: 100%;
+  height: 200px;
+  margin: 5px
+}
+.media{
+  text-align: left;
+  color: white;
+  padding: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.fb{
+  width: 30px;
+  height: 30px;
+  float: left;
+  padding: 5px;
+  margin-top: -15px;
+}
+.ig{
+  width: 30px;
+  height: 30px;
+  border: blue;
+  float: left;
+  padding: 5px;
+  margin-top: -15px;
+
+}
+.twit{
+  width: 30px;
+  height: 30px;
+  border: blue;
+  float: left;
+  padding: 5px;
+  margin-top: -15px;
+
+}
+.pin{
+  width: 30px;
+  height: 30px;
+  border: blue;
+  float: left;
+  padding: 5px;
+  margin-top: -15px;
+
+}
+.yt{
+  width: 30px;
+  height: 30px;
+  border: blue;
+  float: left;
+  padding: 5px;
+  margin-top: -15px;
+}
+.h6{text-align: center;}
+/*--responsive windows!!-*/
+@media only screen and (max-width: 1024px) {
+  body{padding: 10px;}
+  * { box-sizing: border-box; }
+  .webheading{width: 100%; height: 90px;}
+  .logo{width: 10px; height: 10px; margin-left: 10px;}
+  .a1{line-height: .5; text-align: center; font-size: 20px;}
+  .a2{text-align: center; font-size: 15px;}
+  .positionimage{width: 100%; height: 400px; margin-left: 2px;}
+  .message1{width: 70%; height: 40%; font-size: 15px; padding-bottom: 5px;}
+  .title1{font-size: 30px;}
+  .heroimg{width: 100%; height:350px; margin-left:2px;}
+  .herotxt{font-size:15px; width: 60%; height:40%; line-height: 1; font-style: normal;}
+  .title2{font-size: 30px;}
+  .products{width: 100%; height: 500px;}
+  .product1{width: 30%; height: 80%; margin-left: 15px;}
+  .product2{width: 30%; height: 80%; margin-left: 15px;}
+  .product3{width: 30%; height: 80%; margin-left: 15px;}
+  .cap1{font-size: 15px;}
+  .cap2{font-size:13px;}
+  .cap3{font-size:13px;}
+  .cap4{font-size: 13px;}
+  .link_mw1{width: 80%; height: 40px; margin-left: 15px; font-size: 13px; text-align: center;}
+  .link_mw2{width: 80%; height: 40px; margin-left: 15px; font-size: 13px; text-align: center;}
+  .link_mw3{width: 80%; height: 40px; margin-left: 15px; font-size: 13px; text-align: center;}
+  .msgtext1{width: 400px; height: 300px; margin: 10px;}
+  .msgtext2{width: 400px; height: 300px; margin: 10px;}
+  .msgtext3{width: 400px; height: 300px; margin: 10px;}
+  .title3{font-size: 30px;}
+  .disneyproducts{width: 100%; height: 500px;}
+  .product4{width: 30%; height: 80%; margin-left: 15px;}
+  .product5{width: 30%; height: 80%; margin-left: 15px;}
+  .product6{width: 30%; height: 80%; margin-left: 15px;}
+  .capA{font-size: 15px;}
+  .capB{font-size:13px;}
+  .capC{font-size:13px;}
+  .capD{font-size: 13px;}
+  .link_mw4{width: 80%; height: 40px; margin-left: 15px; font-size: 13px; text-align: center:}
+  .link_mw5{width: 80%; height: 40px; margin-left: 15px; font-size: 13px; text-align: center;}
+  .link_mw6{width: 80%; height: 40px; margin-left: 15px; font-size: 13px; text-align: center;}
+  .msgtext4{width: 400px; height: 300px; margin: 10px;}
+  .msgtext5{width: 400px; height: 300px; margin: 10px;}
+  .msgtext6{width: 400px; height: 300px; margin: 10px;}
+  .container{width: 100%; height: 350px;}
+  .one{width: 15%; line-height: 1;}
+  .two{width: 15%; line-height: 1;}
+  .three{width: 15%; line-height: 1;}
+  .four{width: 15%; line-height: 1;}
+
+}

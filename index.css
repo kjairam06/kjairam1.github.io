@@ -1,0 +1,94 @@
+body{
+  background-color: lavender;
+  padding: 15px;
+}
+.heroimg{
+  background-image: url("images/techbanner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 350px;
+  position: relative;
+}
+/*--ANIMATIONS #1--*/
+.slidetitle{
+  color: blueviolet;
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 4px 3px 0 white;
+  animation: slide 5s 5;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+@keyframes slide {
+  0%{ transform: translateX(-200px); opacity:1;}
+  100%{transform: translateX(200px);color:coral;}
+}  /*--end of ANIMATIONS #1*/
+h2{
+  text-align: center;
+  padding: 5px;
+}
+.herotxt{
+  position: absolute;
+  top:15%;
+  left: 10%;
+  width: 60%;
+  background-color: lightgray;
+  text-align: left;
+  padding: 20px;
+  opacity: 100%;
+}
+/*Animations #2*/
+.profilepic{
+  position: absolute;
+  right: 15%;
+  top: 25%;
+  padding: 5px;
+  border: solid orchid;
+  border-radius: 100%;
+  border-width: 5px;
+  animation: zoom 8s 4;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+@keyframes zoom {
+  0%{transform: scale(0);border-color:darkorange;}
+  50%{transform: scale(1);}
+  100%{transform: scale(0.3);border-color:purple;}
+} /*--end of ANIMATIONS #2*/
+.carouselContainer{margin-left: 15%;}
+.projectcard{
+  margin: 10px;
+  border: solid lightgray 2px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.projectcard:hover{
+  filter: saturate(3);
+}
+/*--CONTACT BOX--*/
+.contact{
+  width: 100%;
+  height: 370px;
+  background-color: rosybrown;
+  padding: 30px;
+  margin: 15px;
+}
+.number1{
+  width: 100%;
+  height: 150px;
+  margin: 5px
+}
+.one, .two, .three, .four{
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  float: left;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.one{line-height: 1; color: black; text-align: center;}
+.two{line-height: 1; color: black; text-align: center;}
+.three{line-height: 1; color: black; text-align: center;}
+.four{line-height: 1; color: black; text-align: center;}

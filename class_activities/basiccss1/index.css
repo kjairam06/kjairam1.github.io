@@ -1,0 +1,52 @@
+body{
+  background-color: palegreen;
+}
+.title{
+  color: green;
+  text-align: center;
+  font-size: 500%;
+  text-shadow: 8px 2px 0px yellow;
+  font-family: "bookman old style";
+  font-weight: bold
+}
+.author{
+  color: deeppink;
+  text-align: right;
+  font-family: garamond;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+}
+.para{
+text-align: justify;
+font-family: garamond;
+margin: auto;
+}
+.caption{
+  font-size: 1.5em;
+  color: navy;
+  font-family: garamond;
+  font-style: italic;
+}
+.para2{
+  font-size: 16px;
+  text-align: center;
+  color: red;
+}
+.pic1{
+  border: dotted 20px pink;
+  margin: 10px 15x 5px 10px;
+}
+.pic2{
+  border: dotted 20px white;
+  margin: 10px 5px 5px 10px;
+}
+.pic3{
+  border: dotted 20px yellow;
+  margin: 10px 5px 5px 10px;
+}
+p.para::first-letter{
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 3em;
+}
